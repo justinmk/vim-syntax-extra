@@ -1,0 +1,8 @@
+1) I abstract the cStructure used in parse-param
+2) I distinguish two types of keywords, some of them (yaccInitKey) only make sense in the initial block.
+3) I declare the new structures bisonPrologue and bisonInitialAction
+4) I have made comments contained. This was necessary when the file started with a comment, because yaccInit matches at the beginning of file.
+5) It is legal to include whitespace and comments in the same line a section separators.
+6) I contain yaccKey and yaccKeyActn in yaccCode and cParen.
+7) Support for locations
+8) Double-quoted strings are legal too.
