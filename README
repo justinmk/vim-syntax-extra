@@ -2,5 +2,11 @@ Vim syntax highlighting for bison and flex
 
 by Panayiotis Karabassis
 
-found here: http://vim.1045645.n5.nabble.com/Fwd-Bison-and-Flex-syntax-highlighting-td5631076.html
+found here: https://groups.google.com/d/msg/vim_use/-cHCX2MkpOg/bPoDIRyEqqIJ
+
+Bison - GNU parser generator
+http://www.gnu.org/software/bison/
+
+flex: The Fast Lexical Analyzer
+http://flex.sourceforge.net/
 

@@ -29,10 +29,10 @@ endif
 " Read the C syntax to start with {{{1
 " TODO: Shouldn't we autodetect this?
 if exists("g:yacc_uses_cpp")
- syn include @yaccCode	<sfile>:p:h/cpp.vim
+ syn include @yaccCode	syntax/cpp.vim
  syn cluster yaccStructure contains=cStructure,cppStructure
 else
- syn include @yaccCode	<sfile>:p:h/c.vim
+ syn include @yaccCode	syntax/c.vim
  syn cluster yaccStructure contains=cStructure
 endif
 
