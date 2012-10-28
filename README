@@ -1,12 +1,21 @@
-Vim syntax highlighting for bison and flex
+Vim syntax highlighting extras
+A collection of syntax definitions not yet shipped with stock vim.
 
-by Panayiotis Karabassis
+Bison, Flex
+Author: Panayiotis Karabassis
+https://groups.google.com/d/msg/vim_use/-cHCX2MkpOg/bPoDIRyEqqIJ
+    Bison - GNU parser generator
+    http://www.gnu.org/software/bison/
 
-found here: https://groups.google.com/d/msg/vim_use/-cHCX2MkpOg/bPoDIRyEqqIJ
+    flex: The Fast Lexical Analyzer
+    http://flex.sourceforge.net/
 
-Bison - GNU parser generator
-http://www.gnu.org/software/bison/
+Enhanced C defintions 
+https://github.com/vim-scripts/aftersyntaxc.vim
+    Incorporates and improves upon some of the changes added in vimscript #1201. 
+    This improved .cvim identifies operators, delimiters, and user-defined 
+    functions/function calls. Also included is a wealth of standard ANSI C 
+    function names as keywords. The Match regexps for user-defined functions 
+    have been improved.
 
-flex: The Fast Lexical Analyzer
-http://flex.sourceforge.net/
 
