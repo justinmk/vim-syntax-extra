@@ -209,6 +209,10 @@
 
 %% /*** Grammar Rules ***/
 
+name.opt : NAME
+         | OTHER
+         ;
+
 start   : program {}
         | V_function_definition function_definition
         | V_def_or_decl_list_or_empty def_or_decl_list_or_empty
