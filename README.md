@@ -15,7 +15,7 @@ Enhanced C definitions
 -------------------------------------------------------------------------------
 **Author:** Mikhail Wolfson, Helmut Schellong | [Source](http://www.vim.org/scripts/script.php?script_id=3064)
 
-Improved C syntax groups for identifies operators, delimiters, user-defined 
+Improved C syntax groups for operators, delimiters, user-defined 
 functions, function calls, and a wealth of standard ANSI C function names. 
 
 <table>
