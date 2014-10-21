@@ -1,9 +1,7 @@
 " Vim syntax file
-" Language:	Yacc
-" Maintainer:	Charles E. Campbell, Jr. <NdrOchipS@PcampbellAfamily.Mbiz>
-" Last Change:	Aug 12, 2010
-" Version:	9
-" URL:	http://mysite.verizon.net/astronaut/vim/index.html#vimlinks_syntax
+" Language: Bison
+" Modified from Charles E. Campbell's yacc definitions:
+" http://www.drchip.org/astronaut/vim/index.html#vimlinks_syntax
 "
 " Options: {{{1
 "   g:yacc_uses_cpp : if this variable exists, then C++ is loaded rather than C

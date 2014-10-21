@@ -3,7 +3,7 @@
 " Maintainer:	Charles E. Campbell, Jr. <NdrOchipS@PcampbellAfamily.Mbiz>
 " Last Change:	Mar 26, 2012
 " Version:	13	ASTRO-ONLY
-" URL:	http://mysite.verizon.net/astronaut/vim/index.html#vimlinks_syntax
+" URL:	http://www.drchip.org/astronaut/vim/index.html#vimlinks_syntax
 "
 " Option:
 "   lex_uses_cpp : if this variable exists, then C++ is loaded rather than C
@@ -77,7 +77,7 @@ else
  syn region lexPatString	matchgroup=String		start=+"+	skip=+\\\\\|\\"+	matchgroup=String end=+"+	contained
 endif
 syn match  lexPatTag	"^<\I\i*\(,\I\i*\)*>"			contained nextgroup=lexPat,lexPatTag,lexMorePat,lexPatSep
-syn match  lexPatTagZone	"^<\I\i*\(,\I\i*\)*>\s\+\ze{"		contained nextgroup=lexPatTagZoneStart
+syn match  lexPatTagZone	"^<\I\i*\(,\I\i*\)*>\s*\ze{"		contained nextgroup=lexPatTagZoneStart
 syn match  lexPatTag	+^<\I\i*\(,\I\i*\)*>*\(\\\\\)*\\"+		contained nextgroup=lexPat,lexPatTag,lexMorePat,lexPatSep
 if has("folding")
  syn region  lexPatTagZoneStart matchgroup=lexPatTag	fold	start='{' end='}'	contained contains=lexPat,lexPatComment
