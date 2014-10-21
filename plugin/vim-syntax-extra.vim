@@ -1,8 +1,8 @@
 
 " flex
-autocmd BufRead,BufNewFile *.fl,*.flex,*.l setlocal ft=lex
+autocmd BufRead,BufNewFile *.fl,*.flex,*.l,*.lm setlocal ft=lex
 
 " bison
-autocmd BufRead,BufNewFile *.y,*.ypp setlocal ft=yacc
+autocmd BufRead,BufNewFile *.y,*.ypp,*.ym setlocal ft=yacc
 
 
