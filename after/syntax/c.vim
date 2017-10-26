@@ -232,6 +232,11 @@ syn keyword	cAnsiName	STDC CX_LIMITED_RANGE
 syn keyword	cAnsiName	STDC FENV_ACCESS
 syn keyword	cAnsiName	STDC FP_CONTRACT
 
+syn keyword cAnsiName AF_INET SOCK_STREAM INADDR_ANY AF_INET
+syn keyword cAnsiName SOL_SOCKET SO_REUSEPORT SO_REUSEADDR
+syn keyword cAnsiName SO_RCVTIMEO IPPROTO_TCP TCP_NODELAY
+syn keyword cAnsiName SOCK_DGRAM POLLIN
+
 syn keyword	cAnsiName	and bitor not_eq xor
 syn keyword	cAnsiName	and_eq compl or xor_eq
 syn keyword	cAnsiName	bitand not or_eq
