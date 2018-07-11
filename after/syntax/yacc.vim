@@ -68,7 +68,7 @@ syn cluster yaccCode add=yaccKey,yaccKeyActn
 syn	match	bisonOption	"^\s*%\(require\|defines\|debug\|skeleton\|name-prefix\)\>"	contained
 
 syn	match	yaccUnionStart	"^%union"	skipwhite skipnl nextgroup=yaccUnion	contained
-HiFold syn	region	yaccUnion	matchgroup=yaccCurly start="{" matchgroup=yaccCurly end="}" contains=@yaccCode	contained
+HiFold syn	region	yaccUnion	matchgroup=yaccCurly start="{" matchgroup=yaccCurly end="}" contains=yaccUnion,@yaccCode	contained
 syn	match	yaccBrkt	"[<>]"	contained
 syn	match	yaccType	"<[a-zA-Z_][a-zA-Z0-9_]*>"	contains=yaccBrkt	contained
 
@@ -78,15 +78,15 @@ syn	match	yaccString	"'[^']*'"	contained
 syn	match	yaccString	'"[^"]*"'	contained
 
 syn	match	bisonPrologueStart	"^%code\%\(\s\+\%\(requires\|provides\|top\)\)\="	nextgroup=bisonPrologue	skipwhite	skipnl	contained
-HiFold	syn	region	bisonPrologue	matchgroup=yaccCurly	start="{"	matchgroup=yaccCurly	end="}"	contains=@yaccCode	contained
+HiFold	syn	region	bisonPrologue	matchgroup=yaccCurly	start="{"	matchgroup=yaccCurly	end="}"	contains=bisonPrologue,@yaccCode	contained
 
 syn match	bisonInitialActionStart	"^%initial-action"	nextgroup=bisonInitialAction	skipwhite	skipnl	contained
-HiFold	syn	region	bisonInitialAction	matchgroup=yaccCurly	start="{"	matchgroup=yaccCurly	end="}"	contains=@yaccCode	contained
+HiFold	syn	region	bisonInitialAction	matchgroup=yaccCurly	start="{"	matchgroup=yaccCurly	end="}"	contains=bisonInitialAction,@yaccCode	contained
 
 " ---------------------------------------------------------------------
 " I'd really like to highlight just the outer {}.  Any suggestions??? {{{1
 syn	match	yaccCurlyError	"[{}]"
-HiFold syn	region	yaccAction	matchgroup=yaccCurly start="{" end="}" contains=@yaccCode	contained
+HiFold syn	region	yaccAction	matchgroup=yaccCurly start="{" end="}" contains=yaccAction,@yaccCode	contained
 
 " ---------------------------------------------------------------------
 " Yacc synchronization: {{{1
