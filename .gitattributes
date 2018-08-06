@@ -1,0 +1,2 @@
+# Prevent fixtures from showing in diffs or skewing language stats
+test/* linguist-vendored
