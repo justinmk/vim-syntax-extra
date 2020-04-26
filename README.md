@@ -5,18 +5,22 @@ A collection of syntax definitions not yet shipped with stock vim.
 
 Bison, Flex
 -------------------------------------------------------------------------------
-**Author:** Panayiotis Karabassis | [Source](https://groups.google.com/d/msg/vim_use/-cHCX2MkpOg/bPoDIRyEqqIJ)
+Authors:
+- [Panayiotis Karabassis](https://groups.google.com/d/msg/vim_use/-cHCX2MkpOg/bPoDIRyEqqIJ)
+- [Robert van Engelen](https://github.com/justinmk/vim-syntax-extra/pull/14)
 
-[Bison - GNU parser generator](http://www.gnu.org/software/bison/)
-
-[flex: The Fast Lexical Analyzer](http://flex.sourceforge.net/)
+For:
+- [Bison - GNU parser generator](http://www.gnu.org/software/bison/)
+- [flex: The Fast Lexical Analyzer](https://github.com/westes/flex)
+- [RE/flex: advanced Flex++](https://github.com/Genivia/RE-flex)
 
 Enhanced C definitions 
 -------------------------------------------------------------------------------
-**Author:** Mikhail Wolfson, Helmut Schellong | [Source](http://www.vim.org/scripts/script.php?script_id=3064)
+Authors:
+- [Mikhail Wolfson, Helmut Schellong](http://www.vim.org/scripts/script.php?script_id=3064)
 
-Improved C syntax groups for operators, delimiters, user-defined 
-functions, function calls, and a wealth of standard ANSI C function names. 
+Improved C syntax groups for operators, delimiters, user-defined functions,
+function calls, and a wealth of standard ANSI C function names.
 
 <table>
 <tr>
